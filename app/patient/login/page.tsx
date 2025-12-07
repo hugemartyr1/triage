@@ -59,7 +59,6 @@
 import { useEffect, useState } from "react";
 import { auth, db } from "@/lib/firebase";
 import { collection, query, where, onSnapshot } from "firebase/firestore";
-import { PatientCard } from "@/components/PatientCard";
 
 export default function PatientDashboard() {
   const [record, setRecord] = useState<any | null>(null);
